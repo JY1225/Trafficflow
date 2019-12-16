@@ -1,0 +1,164 @@
+.table-border { /*border-top:1px solid #000;  */
+	border-bottom: 1px solid #000; /*ÏÂ²¿±ß¿ò*/
+	border-left: 1px solid #000; /*×ó²¿±ß¿ò*/
+	border-right: 0px solid #000; /* */
+}
+
+.table-border td {
+	border-top: 1px solid #000; /*ÉÏ²¿±ß¿ò*/
+	border-right: 1px solid #000; /*ÓÒ²¿±ß¿ò*/
+}
+
+#tips {
+	position: absolute;
+	color: #333;
+	display: none;
+}
+
+#tips s {
+	position: absolute;
+	top: 40px;
+	left: -20px;
+	display: block;
+	width: 0px;
+	height: 0px;
+	font-size: 0px;
+	line-height: 0px;
+	border-color: transparent #BBA transparent transparent;
+	border-style: dashed solid dashed dashed;
+	border-width: 10px;
+}
+
+#tips s i {
+	position: absolute;
+	top: -10px;
+	left: -8px;
+	display: block;
+	width: 0px;
+	height: 0px;
+	font-size: 0px;
+	line-height: 0px;
+	border-color: transparent #fff transparent transparent;
+	border-style: dashed solid dashed dashed;
+	border-width: 10px;
+}
+
+#tips .t_box {
+	position: relative;
+	background-color: #CCC;
+	filter: alpha(opacity =         50);
+	-moz-opacity: 0.5;
+	bottom: -3px;
+	right: -3px;
+}
+
+#tips .t_box div {
+	position: relative;
+	background-color: #FFF;
+	border: 1px solid #ACA899;
+	background: #FFF;
+	padding: 1px;
+	top: -3px;
+	left: -3px;
+}
+
+.tips {
+	width: 82px;
+	height: 82px;
+	border: 1px solid #DDD;
+}
+
+.help_step_box {
+	background: #f1f7e4;
+	height: 55px;
+	overflow: hidden;
+	border-top: 1px solid #FFF;
+}
+
+.help_step_item {
+	float: left;
+	height: 55px;
+	line-height: 55px;
+	padding: 0 25px 0 45px;
+	cursor: pointer;
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.help_step_num {
+	width: 19px;
+	height: 19px;
+	line-height: 19px;
+	position: absolute;
+	text-align: center;
+	top: 18px;
+	left: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	background: url(/images/num.png);
+	color: #156600;
+}
+
+.help_step_set {
+	background: #27a806;
+	color: #FFF;
+}
+
+.help_step_set .help_step_left {
+	width: 8px;
+	height: 55px;
+	background: url(/images/bak.jpg) left top no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.help_step_set .help_step_right {
+	width: 8px;
+	height: 55px;
+	background: url(/images/bak.jpg) left bottom no-repeat;
+	position: absolute;
+	right: -8px;
+	top: 0;
+}
+
+.finish {
+	width: 100px;
+	height: 30px;
+	background-color: #E0ECFF;
+	text-align: center;
+	vertical-align: bottom;
+	font-size: 18px;
+	font-weight: bold;
+	border: 1px;
+}
+
+.working {
+	width: 100px;
+	height: 30px;
+	background-color: #A677AB;
+	text-align: center;
+	vertical-align: bottom;
+	font-size: 18px;
+	font-weight: bold;
+	border: 1px;
+}
+
+.unstart {
+	width: 100px;
+	height: 30px;
+	background-color: #A4A39D;
+	/*#A4A39D*/
+	text-align: center;
+	vertical-align: bottom;
+	font-size: 18px;
+	font-weight: bold;
+	border: 1px;
+}
+
+.right {
+	background: url('/images/right.png') no-repeat;
+	width: 128px;
+	height: 64px
+}

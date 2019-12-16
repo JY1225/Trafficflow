@@ -1,0 +1,21 @@
+
+/*  »’¿˙“≥√Ê    */
+.calendar{ }
+.calendar table{ width:100%; background:#aac2e9; border-spacing:1px; }
+.calendar table thead tr th{ text-align:center; height:34px; background:#FFFFFF url(/img/box_tit.gif) repeat-x; padding:0px; }
+.calendar table thead tr th.month{ padding:5px 0px; }
+.calendar table thead tr th.month .txt{ width:61px; padding:2px 24px 2px 4px; background:url(/img/ico-calendar.gif) no-repeat 65px center; border:1px solid #DEDEDE; height:22px; font-family:Verdana; }
+.calendar table tbody tr td{ background:#FFFFFF; text-align:center; height:45px; font-size:16px; font-family:Verdana; }
+.calendar table tbody tr td.m{ background:Red; }
+.calendar table tbody tr td.w{ background:#a2c5ff; }
+.calendar table tbody tr td.d{ background:#008001; }
+.calendar .tip{ height:22px; padding:20px 10px; }
+.calendar .tip .item{ width:25%; float:left; }
+.calendar .tip .item span{ width:32px; height:16px; display:inline-block; border:1px solid #CCC; vertical-align:middle; }
+.calendar .tip .item span.d{ background:#008001; }
+.calendar .tip .item span.w{ background:#a2c5ff; }
+.calendar .tip .item span.m{ background:Red; }
+.calendar .info{ margin:0px; }
+.calendar .info{ font-size:14px; line-height:22px; }
+.calendar .info dt{ font-weight:bold; }
+.calendar .info dd{ margin-left:16px; } 

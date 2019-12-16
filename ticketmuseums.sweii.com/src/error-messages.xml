@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="GBK"?> 
+  <properties> 
+    <!-- 共用错误信息 -->
+    <property key="EXCEPTION" value="请求失败,请稍后在试" />
+    <property key="INVALID_REQUEST">
+    	<![CDATA[请求参数错误]]>
+    </property>  
+    
+    
+    <!-- 用户管理 -->
+    <property key="ADMIN_IS_EXPIRED">
+	    <![CDATA[您的密码已过期，请与管理员联系]]>
+    </property>
+    <property key="ADMIN_IS_DISABLE">
+	    <![CDATA[您的账号已冻结，请与管理员联系]]>
+    </property>
+    <property key="ADMIN_IS_DISABLE">
+	    <![CDATA[您的账号已冻结，请与管理员联系]]>
+    </property> 
+    <property key="ADMIN_IS_EXISTED">
+	    <![CDATA[当前账号{0}已存在]]>
+    </property> 
+    <property key="BRANCH_NOT_EXIST">
+	    <![CDATA[选择的组织不存在]]>
+    </property>
+    <property key="PASSWORD_VALIDATE_FAILURE" value="密码校验失败，请注意大小写" /> 
+    <property key="NEW_PASSWORD_EQUALS_OLD" value="新密码不能与旧密码一样"/>
+    <property key="NEW_PASSWORD_EQUALS_PRE" value="新密码不能与上次密码一样"/>
+    <property key="USERNAME_IS_NOT_MATCH_PASSWORD" value="用户名和密码不匹配，请注意大小写"/>
+    <property key="VERIFY_CODE_WRONG" value="验证码校验失败"/>
+    
+    <!-- 功能点管理 -->
+    <property key="DUPLICATE_FUNCTION">
+    	<![CDATA[功能编号已存在]]>
+    </property> 
+     <property key="FUNCTION_IS_NOT_EXIST">
+    	<![CDATA[功能点不存在]]>
+    </property> 
+    
+     <property key="PARENT_MENU_NOT_EXIST">
+    	<![CDATA[上级菜单不存在]]>
+     </property> 
+     <property key="MODULE_IS_NOT_EXIST">
+    	<![CDATA[模块不存在]]>
+     </property> 
+      <property key="PARENT_MENU_NOT_LEVEL">
+    	<![CDATA[不在同一层的菜单不能排序]]>
+     </property> 
+    
+  </properties>
+

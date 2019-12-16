@@ -1,0 +1,42 @@
+.b-m-mpanel {
+	Z-INDEX: 99997; BORDER-BOTTOM: #718bb7 1px solid; POSITION: absolute; BORDER-LEFT: #718bb7 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: url(/themes/default/images/menu_bg.gif) #f0f0f0 repeat-y left 50%; BORDER-TOP: #718bb7 1px solid; TOP: 0px; BORDER-RIGHT: #718bb7 1px solid; PADDING-TOP: 2px; LEFT: 0px
+}
+.b-m-split {
+	MARGIN: 0px 2px; BACKGROUND: url(/themes/default/images/m_splitLine.gif) repeat-x center 50%; HEIGHT: 6px; FONT-SIZE: 0px
+}
+.b-m-item {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 100%; MARGIN: 0px 2px 0px 3px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px;  PADDING-TOP: 4px
+}
+.b-m-idisable {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 100%; MARGIN: 0px 2px 0px 3px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px;  PADDING-TOP: 4px
+}
+.b-m-idisable {
+	COLOR: #808080
+}
+.b-m-ibody {
+	TEXT-OVERFLOW: ellipsis; OVERFLOW: hidden
+}
+.b-m-arrow {
+	TEXT-OVERFLOW: ellipsis; OVERFLOW: hidden
+}
+.b-m-arrow {
+	BACKGROUND: url(/themes/default/images/m_arrow.gif) no-repeat right 50%
+}
+.b-m-idisable .b-m-arrow {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.b-m-item IMG {
+	MARGIN-RIGHT: 8px
+}
+.b-m-ifocus IMG {
+	MARGIN-RIGHT: 8px
+}
+.b-m-idisable IMG {
+	MARGIN-RIGHT: 8px
+}
+.b-m-ifocus {
+	BORDER-BOTTOM: #aaccf6 1px solid; BORDER-LEFT: #aaccf6 1px solid; PADDING-BOTTOM: 3px; LINE-HEIGHT: 100%; MARGIN: 0px 2px 0px 3px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; BACKGROUND: url(/themes/default/images/m_item.gif) repeat-x 50% bottom; BORDER-TOP: #aaccf6 1px solid;  BORDER-RIGHT: #aaccf6 1px solid; PADDING-TOP: 3px
+}
+.b-m-idisable IMG {
+	VISIBILITY: hidden
+}

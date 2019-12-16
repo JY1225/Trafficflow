@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+	<bean id="codeDao" parent="baseDao">
+		<constructor-arg>
+			<value>com.sweii.vo.Code</value>
+		</constructor-arg>
+	</bean>
+	<bean id="settingDao" parent="baseDao">
+		<constructor-arg>
+			<value>com.sweii.vo.Setting</value>
+		</constructor-arg>
+	</bean>
+	<bean id="bakDatabaseDao" parent="baseDao">
+		<constructor-arg>
+			<value>com.sweii.vo.BakDatabase</value>
+		</constructor-arg>
+	</bean>
+	<bean id="ticketDao" parent="baseDao">
+		<constructor-arg>
+			<value>com.sweii.vo.Ticket</value>
+		</constructor-arg>
+	</bean>
+	<bean id="categoryDao" parent="baseDao">
+		<constructor-arg>
+			<value>com.sweii.vo.Category</value>
+		</constructor-arg>
+	</bean>
+	<bean id="equipmentDao" parent="baseDao">
+		<constructor-arg>
+			<value>com.sweii.vo.Equipment</value>
+		</constructor-arg>
+	</bean>
+	<bean id="userDao" parent="baseDao">
+		<constructor-arg>
+			<value>com.sweii.vo.User</value>
+		</constructor-arg>
+	</bean>
+	<bean id="recordLogDao" parent="baseDao">
+		<constructor-arg>
+			<value>com.sweii.vo.RecordLog</value>
+		</constructor-arg>
+	</bean>
+	<bean id="cardInfoDao" parent="baseDao">
+		<constructor-arg>
+			<value>com.sweii.vo.CardInfo</value>
+		</constructor-arg>
+	</bean>
+	<bean id="reportDao" class="com.sweii.dao.ReportDaoImpl" parent="baseDao" />
+</beans>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd" >
+<struts>
+	<package name="admin" extends="struts-default" namespace="/admin">
+		<action name="queryAdminPage" class="com.sweii.action.AdminAction" method="queryAdminPage">
+			<result name="success" type="dispatcher">/admin/Admin.jsp</result>
+		</action>
+		<action name="login" class="com.sweii.action.AdminAction" method="login" />
+		<action name="saveClientHeight" class="com.sweii.action.AdminAction" method="saveClientHeight" />
+		<action name="logout" class="com.sweii.action.AdminAction" method="logout">
+			<result name="success" type="redirect">/Login.jsp</result>
+		</action>
+		<action name="prepareAddAdmin" class="com.erican.auth.action.AdminAction" method="doPrepareAddAction"> 
+			<result name="success" type="dispatcher">/admin/AdminAddDialog.jsp</result>
+		</action>
+		<action name="changePassword" class="com.sweii.action.AdminAction" method="changePassword" />
+		<action name="addAdmin" class="com.erican.auth.action.AdminAction" method="doAddAction" />
+		<action name="editAdmin" class="com.erican.auth.action.AdminAction" method="doEditAction" />
+		<action name="deleteAdmin" class="com.sweii.action.AdminAction" method="deleteAdmin" />
+		<action name="prepareEditAdmin" class="com.erican.auth.action.AdminAction" method="doPrepareEditAction">
+			<result name="success" type="dispatcher">/admin/AdminEditDialog.jsp</result>
+		</action>
+		<!-- 模块分类 -->
+		<action name="queryModuleCategory" class="com.erican.auth.action.ModuleCategoryAction" method="queryModuleCategory">
+			<result name="success" type="dispatcher">/admin/ModuleCategory.jsp</result>
+		</action>
+		<action name="editModuleCategory" class="com.erican.auth.action.ModuleCategoryAction" method="doEditAction" />
+		<action name="addModuleCategory" class="com.erican.auth.action.ModuleCategoryAction" method="doAddAction" />
+		<action name="deleteModuleCategory" class="com.erican.auth.action.ModuleCategoryAction" method="doDeleteAction" />
+		<!-- 模块管理-->
+		<action name="queryModule" class="com.erican.auth.action.ModuleAction" method="doPageAction">
+			<result name="success" type="dispatcher">/admin/Module.jsp</result>
+		</action>
+		<action name="editModule" class="com.erican.auth.action.ModuleAction" method="doEditAction" />
+		<action name="addModule" class="com.erican.auth.action.ModuleAction" method="doAddAction" />
+		<action name="deleteModule" class="com.erican.auth.action.ModuleAction" method="doDeleteAction" />
+		<action name="prepareEditModule" class="com.erican.auth.action.ModuleAction" method="doPrepareEditAction">
+			<result name="success" type="dispatcher">/admin/ModuleEditDialog.jsp</result>
+		</action>
+		<action name="prepareAddModule" class="com.erican.auth.action.ModuleAction" method="doPrepareAddAction">
+			<result name="success" type="dispatcher">/admin/ModuleAddDialog.jsp</result>
+		</action>
+		<action name="queryModuleTree" class="com.erican.auth.action.ModuleAction" method="queryModuleTree">
+			<result name="success" type="dispatcher">/admin/ModuleTree.jsp</result>
+		</action>
+
+		<!-- 功能点管理-->
+		<action name="queryFunction" class="com.erican.auth.action.FunctionAction" method="doListAction">
+			<result name="success" type="dispatcher">/admin/Function.jsp</result>
+		</action>
+		<action name="editFunction" class="com.erican.auth.action.FunctionAction" method="doEditAction" />
+		<action name="addFunction" class="com.erican.auth.action.FunctionAction" method="doAddAction" />
+		<action name="deleteFunction" class="com.erican.auth.action.FunctionAction" method="doDeleteAction" />
+		<action name="prepareEditFunction" class="com.erican.auth.action.FunctionAction" method="doPrepareEditAction">
+			<result name="success" type="dispatcher">/admin/FunctionEditDialog.jsp</result>
+		</action>
+		<action name="prepareAddFunction" class="com.erican.auth.action.FunctionAction" method="doPrepareAddAction">
+			<result name="success" type="dispatcher">/admin/FunctionAddDialog.jsp</result>
+		</action>
+
+		<!-- 菜单管理-->
+		<action name="queryMenuPage" class="com.erican.auth.action.MenuAction" method="queryMenuPage">
+			<result name="success" type="dispatcher">/admin/Menu.jsp</result>
+			<result name="subList" type="dispatcher">/admin/MenuSubList.jsp</result>
+		</action>
+		<action name="editMenu" class="com.erican.auth.action.MenuAction" method="doEditAction" />
+		<action name="addMenu" class="com.erican.auth.action.MenuAction" method="doAddAction" />
+		<action name="deleteMenu" class="com.erican.auth.action.MenuAction" method="doDeleteAction" />
+		<action name="sortMenu" class="com.erican.auth.action.MenuAction" method="doSortMenu" />
+		<action name="prepareEditMenu" class="com.erican.auth.action.MenuAction" method="doPrepareEditAction">
+			<result name="success" type="dispatcher">/admin/MenuEditDialog.jsp</result>
+		</action>
+		<action name="prepareAddMenu" class="com.erican.auth.action.MenuAction" method="doPrepareAddAction">
+			<result name="success" type="dispatcher">/admin/MenuAddDialog.jsp</result>
+		</action>
+				<!-- 角色用户角色管理 -->
+		<action name="queryRoleTree" class="com.erican.auth.action.RoleAction" method="queryRoleTree"> 
+			<result name="success" type="dispatcher">/admin/Role.jsp</result>
+		</action>
+		<action name="viewRole" class="com.erican.auth.action.RoleAction" method="doViewAction"> 
+			<result name="success" type="dispatcher">/admin/RoleTabBasic.jsp</result>
+		</action>
+		<action name="prepareAddRole" class="com.erican.auth.action.RoleAction" method="doPrepareAddAction"> 
+			<result name="success" type="dispatcher">/admin/RoleAddDialog.jsp</result>
+		</action>
+		<action name="prepareEditRole" class="com.erican.auth.action.RoleAction" method="doPrepareEditAction"> 
+			<result name="success" type="dispatcher">/admin/RoleEditDialog.jsp</result>
+		</action>
+		<action name="deleteRole" class="com.erican.auth.action.RoleAction" method="doDeleteAction" />
+		<action name="addRole" class="com.erican.auth.action.RoleAction" method="doAddAction" />
+		<action name="editRole" class="com.erican.auth.action.RoleAction" method="doEditAction" />
+		<action name="addRoleAdmin" class="com.erican.auth.action.RoleAction" method="doAddRoleAdmin" />
+		<action name="deleteRoleAdmin" class="com.erican.auth.action.RoleAction" method="doDeleteRoleAdmin" />
+		
+		<action name="prepareAddRoleAdmin" class="com.erican.auth.action.RoleAction" method="doPrepareAddRoleAdmin"> 
+			<result name="success" type="dispatcher">/admin/RoleTabUserListDialog.jsp</result>
+		</action>
+		<!-- 角色权限 -->
+		
+		<action name="queryRoleFunction" class="com.erican.auth.action.RoleFunctionAction" method="doViewAction">
+			<result name="success" type="dispatcher">/admin/RoleTabFunction.jsp</result>
+		</action>
+		
+		<action name="editRoleFunction" class="com.erican.auth.action.RoleFunctionAction" method="doEditAction" />
+		<action name="viewRoleFunction" class="com.erican.auth.action.FunctionAction" method="viewRoleFunction">
+			<result name="success" type="dispatcher">/admin/RoleFunction.jsp</result>
+		</action>
+		<action name="setFunction" class="com.erican.auth.action.FunctionAction" method="setFunction" />
+	</package>
+</struts>

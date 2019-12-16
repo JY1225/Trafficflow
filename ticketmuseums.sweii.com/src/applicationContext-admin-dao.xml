@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+	<!--下面这个dao没有写任何java代码完全有spring搞定 -->
+	<!-- 配置实体类的DAO -->
+	<bean id="adminDao" parent="baseDao" class="com.erican.auth.dao.impl.AdminDaoImpl" />
+	<bean id="moduleCategoryDao" class="com.erican.auth.dao.impl.ModuleCategoryDaoImpl" parent="baseDao" />
+	<bean id="moduleDao" class="com.erican.auth.dao.impl.ModuleDaoImpl" parent="baseDao" />
+	<bean id="functionDao" class="com.erican.auth.dao.impl.FunctionDaoImpl" parent="baseDao" />
+	<bean id="roleDao" class="com.erican.auth.dao.impl.RoleDaoImpl" parent="baseDao" />
+	<bean id="roleFunctionDao" class="com.erican.auth.dao.impl.RoleFunctionDaoImpl" parent="baseDao" />
+	<bean id="menuDao" class="com.erican.auth.dao.impl.MenuDaoImpl" parent="baseDao" />
+	<bean id="adminFunctionDao" class="com.erican.auth.dao.impl.AdminFunctionDaoImpl" parent="baseDao" />
+	<bean id="adminRoleDao" class="com.erican.auth.dao.impl.AdminRoleDaoImpl" parent="baseDao" />
+	<bean id="branchDao" class="com.erican.auth.dao.impl.BranchDaoImpl" parent="baseDao" />
+</beans>

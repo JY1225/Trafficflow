@@ -1,0 +1,156 @@
+body{ margin:0px; padding:0px;  font-size:12px; margin:0px;}
+a{text-decoration:none;}
+a:hover{}
+ul, li {list-style-type: none;margin: 0;padding: 0;}
+img{border-width:0px;}
+
+.FHeader{margin:0px; padding:0px; border-width:0px;}
+
+/*登录页*/
+.Login{width:559px; overflow:hidden; margin:auto;}
+.Login .tab{width:559px; height:152px;background:url(/image/login.jpg) no-repeat scroll left top transparent;}
+.Login .body{width:557px; border:1px solid black; height:233px; background:url(/image/loginbg.png) no-repeat scroll 0 0 transparent; border-top-width:0px; position:relative;}
+.Login .body input{border-width:0px; padding:0px;}
+.Login .body .user{ position:absolute; width:165px; height:18px; top:41px; left:290px;}
+.Login .body .pwd{ position:absolute; width:165px; height:18px; top:75px; left:290px;}
+.Login .body .ck{ position:absolute; width:75px; height:18px; top:108px; left:290px;}
+.Login .body .submit{ position:absolute; width:68px; height:30px; top:150px; right:150px; cursor:pointer;background:url(/image/loginbg.gif) no-repeat scroll -338px -150px transparent;}
+.Login .body .btn{position:absolute; width:68px; height:30px; top:150px; right:68px; cursor:pointer;background:url(/image/loginbg.gif) no-repeat scroll -422px -150px transparent;}
+.Login .body .code{float:right; width:57px; height:22px; position:absolute; right:125px;top:106px;}
+.Login .body .tel{ height:20px; line-height:20px; text-align:right; overflow:hidden;}
+.Login .body .tel span{font-weight:bold; color:#686868; font-size:13px; margin-right:10px;}
+.Login .body .com{ position:absolute;height:20px; line-height:20px; padding-bottom:10px; text-align:center; width:557px; bottom:0px; left:0px; color:#686868;}
+.Login .body .com span{}
+
+/* 头部 */
+.Header{width:100%; height:60px; margin:auto;background:url(/image/Header.gif) no-repeat scroll right center transparent; overflow:hidden;}
+.Header .tit{float:left; width:306px; height:60px;background:url(/image/HeaderT.gif) no-repeat scroll left center transparent;}
+.Header .bg{float:right;height:55px; width:60px; margin-right:20px; padding-top:5px;}
+.Header .bg a{ float:left; width:33px; height:33px; margin-left:14px;}
+.Header .bg div{clear:both; text-align:center; color:white; padding:2px 0px;}
+.Header .tui a.t{background:url(/image/tui.gif) no-repeat scroll left center transparent;}
+.Header .qie a.q{background:url(/image/qie.gif) no-repeat scroll left center transparent;}
+/*  左 */
+.main{overflow:hidden;background:url(/image/leftbg.gif) repeat-y scroll 0 0 transparent;}
+.Right{ margin-left:193px; background-color:#FFFFFF; overflow:hidden; _display:inline-block;}
+.Left{float:left; width:190px;overflow:hidden; position:relative;_display:inline-block; height:100%;background:url(/image/leftbgs.gif) repeat-y scroll 0 0;}
+
+.Left .tab{height:25px; margin-bottom:10px;background:url(/image/leftTab.gif) no-repeat scroll left top transparent;}
+.Left .tab span{font-weight:bold; color:#2957b5; line-height:25px; margin-left:8px;}
+.Left .List{ padding:0px 10px; overflow:hidden;}
+.Left .List ul{padding:5px 0px; overflow:hidden;}
+.Left .List .Tit{width:173px; height:37px; overflow:hidden;background:url(/image/LItem.gif) no-repeat scroll left center transparent;}
+.Left .List .Tit span{width:166px; margin-left:7px; height:37px; overflow:hidden;float:left;}
+
+.Left .List .Tit a{width:166px; height:30px; padding-top:7px; float:left; color:white; font-size:24px; text-align:center; line-height:30px;}
+.Left .List .Tit a.current{background:url(/image/dot1.gif) no-repeat scroll 147px 16px transparent;}
+.Left .List .Tit a:hover{background:url(/image/dot1.gif) no-repeat scroll 147px 16px transparent;}
+.Left .List ul li{ overflow:hidden; height:25px; padding:2px 0px 2px 75px;background:url(/image/listIcon.gif) no-repeat scroll 50px 6px transparent; line-height:25px;}
+.Left .List ul li a{color:white;}
+
+.Left .List .Tit span.p{background:url(/image/Iconp.gif) no-repeat scroll left center;}
+.Left .List .Tit span.k{background:url(/image/Iconk.gif) no-repeat scroll left center;}
+.Left .List .Tit span.s{background:url(/image/Icons.gif) no-repeat scroll  left center;}
+.Left .List .Tit span.j{background:url(/image/Iconj.gif) no-repeat scroll  left center;}
+.Left .List .Tit span.t{background:url(/image/Icont.gif) no-repeat scroll left center}
+.Left .List .Tit span.c{background:url(/image/Iconc.gif) no-repeat scroll left center;}
+/* 右边标题 */
+.box01{ height:25px; overflow:hidden;background:url(/image/box01bg.gif) repeat-x scroll left top transparent;line-height:26px;}
+.box02{ height:50px; overflow:hidden;line-height:50px;}
+.box01 .left{float:left; width:10px; height:25px;background:url(/image/box01l.gif) no-repeat scroll left top transparent;}
+.box01 .tit{ font-size:13px; font-weight:bold;color:#2a58b8;}
+/* 业务处理列表--操作 */
+.box02{overflow:hidden; height:44px; background-color:#f0f0f0; border-bottom:2px solid #FFFFFF;}
+.box02 .icon{float:left;overflow:hidden;height:40px; padding-top:4px;}
+.box02 .icon a{float:left;background:url(/image/icon.gif) no-repeat scroll -8px 0 transparent;margin-left:16px;}
+.box02 .icon div{clear:both; margin-top:2px; overflow:hidden; padding:2px 10px;}
+.box02 .icon div a{color:black; word-break:keep-all; background:none; float:left; margin-left:0px;}
+
+.xin{width:16px; height:16px;background:url(/image/Icon_xin.gif) repeat-x scroll 0 0; }
+.box02 .icon a.da{width:16px; height:16px;background:url(/image/Icon_da.gif) no-repeat scroll 0 0;}
+.box02 .icon a.yu{width:16px; height:16px;background:url(/image/Icon_yu.gif) no-repeat scroll 0 0;}
+.box02 .icon a.gou{width:16px; height:16px;background:url(/image/Icon_yu.gif) no-repeat scroll 0 0;}
+.box02 .icon a.sha{width:16px; height:16px;background:url(/image/Icon_sha.gif) no-repeat scroll 0 0;}
+.box02 .icon a.di{width:16px; height:16px;background:url(/image/Icon_dis.gif) no-repeat scroll 0 0;}
+.box02 .icon a.shang{width:16px; height:16px;background:url(/image/Icon_shangs.gif) no-repeat scroll 0 0;}
+.box02 .icon a.xia{width:16px; height:16px;background:url(/image/Icon_xia.gif) no-repeat scroll 0 0;}
+.box02 .icon a.zhui{width:16px; height:16px;background:url(/image/Icon_zhui.gif) no-repeat scroll 0 0;}
+.box02 .icon a.guan{width:16px; height:16px;background:url(/image/Icon_guan.gif) no-repeat scroll 0 0;}
+
+.box02 .Rcur{background:url(/image/IconRcur.gif) no-repeat scroll right top transparent;}
+.box02 .none div a{color:#a0a0a0;}
+/*业务处理列表--表格形式 */
+.box03{background-color:#f0f0f0; overflow:inherit; padding:1px 0px 0px 1px;}
+.box03 .table{overflow:hidden; background-color:white; text-align:left;table-layout:automatic;}
+.box03 .table tr{overflow:hidden; height:16px;font-size:12px;line-height:16px;}
+.box03 .table .tr td{ border-bottom:1px solid black; border-right:1px solid black;}
+.box03 .table .tr{ background-color:#f0f0f0;}
+.box03 .table .tr .no{width:70px;}
+.box03 .table .tr .name{width:200px;}
+.box03 .table .tr .sex{width:120px;}
+.box03 .table .tr .card{width:120px;}
+.box03 .table .item td{border-bottom:1px solid #d7d1c3; border-right:1px solid #D7D1C3;overflow：hidden;text-overflow:ellipsis; white-space: nowrap;}
+.box03 .table .last td{border-bottom:1px solid #d7d1c3; border-right:1px solid #D7D1C3; background-color:#ffffc1;}
+.box03 .table .color{background-color:#f2f2fe;overflow：hidden}
+.box03 .table .current{background-color:black; color:white;}
+/*  办理会员卡  */
+.UIBox{ overflow:hidden;}
+.Card{ overflow:hidden;}
+.Card .tab{height:30px;width:100%;overflow:hidden; position:relative;}
+.Card .tab .tabs{height:31px; margin:auto 28px;background:url(/image/UItabbg.gif) repeat-x scroll left  0; line-height:31px;}
+.Card .tab .le{float:left;background:url(/image/UItable.gif) no-repeat scroll left  0;height:31px;width:30px;}
+.Card .tab .ri{background:url(/image/UItabri.gif) no-repeat scroll right  0; height:31px;width:30px; position:absolute; top:0px;right:0px;}
+.Card .tab .tit{float:left;height:30px; color:white; font-weight:bold;}
+.Card .tab .ri .a{float:left;width:21px; height:21px; margin:6px 0px 0px 4px;}
+
+.Card .BodyBox{}
+
+.Card .BodyBox .body{ overflow:hidden;}
+.Card .foot{ overflow:hidden;background:url(/image/UIfoot.gif) repeat-x scroll left top;width:100%;height:5px;}
+
+.Cbox02{margin:auto; overflow:hidden; padding-left:10px;background:url(/image/icontabbg.gif) no-repeat scroll 0 0  #f0f0f0;}
+.Cbox02 .icon a{ margin-left:6px;}
+.Cbox02 .icon div{padding:2px 4px;}
+
+.box02 .icon a.sa{width:16px; height:16px;background:url(/image/Icon_sa.gif) no-repeat scroll 0 0;}
+.box02 .icon a.fu{width:17px; height:16px;background:url(/image/Icon_fu.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.xia{width:16px; height:16px;background:url(/image/Icon_xias.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.zhui{width:16px; height:16px;background:url(/image/Icon_zhuis.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.tiao{width:16px; height:16px;background:url(/image/Icon_tiao.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.kao{width:16px; height:16px;background:url(/image/Icon_kao.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.zan{width:16px; height:16px;background:url(/image/Icon_zan.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.in{width:16px; height:16px;background:url(/image/Icon_ins.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.del{width:16px; height:16px;background:url(/image/Icon_dels.gif) no-repeat scroll 0 0;}
+
+.Card .BodyBox .body .Box{overflow:hidden; margin:auto; background-color:#f0f0f0; color:black; padding-bottom:10px;}
+.Card .BodyBox .body .Box ul{overflow:hidden;}
+.Card .BodyBox .body .Box ul li{overflow:hidden; padding:3px 0px; height:22px; line-height:22px;}
+.Card .BodyBox .body .Box ul li .span{float:left; overflow:hidden; border-top:1px solid #a0a0a0; border-left:1px solid #a0a0a0; border-bottom:1px solid #FFFFFF; border-right:1px solid #FFFFFF;}
+.Card .BodyBox .body .Box ul li .input{float:left; padding:0px; height:18px; border-top:1px solid #686868; border-left:1px solid #686868; border-bottom:1px solid #e3e3e3; border-right:1px solid #e3e3e3;}
+.Card .BodyBox .body .Box ul li .l{float:left;width:73px; text-align:right;}
+.Card .BodyBox .body .Box ul li .l1{float:left; width:133px; padding-left:12px;}
+.Card .BodyBox .body .Box ul li .l1 .in{width:125px; }
+.Card .BodyBox .body .Box ul li .r{float:left;width:173px;padding-left:12px;}
+.Card .BodyBox .body .Box ul li .r .Cin{width:167px;}
+.Card .BodyBox .body .Box ul li .d{float:left; overflow:hidden;width:405px; padding-left:12px;}
+.Card .BodyBox .body .Box ul li .din{width:377px;}
+.Card .BodyBox .body .Box ul li .d span{margin-right:5px;}
+.Card .BodyBox .body .Box ul li .dt{font-weight:bold;}
+.Card .BodyBox .body .Box ul li .tin{width:97px;}
+.Card .BodyBox .body .Box ul li .atd{width:108px; padding-left:12px; position:relative; float:left; margin-right:25px;}
+.Card .BodyBox .body .Box ul li .atd .time{ float:right; position:absolute; width:16px; height:15px; top:4px; right:10px;background:url(/image/listIcon.gif) no-repeat scroll 0 0;}
+.Card .BodyBox .body .Box ul li.button{ text-align:center; padding-top:5px;}
+.Card .BodyBox .body .Box ul li.button input{ padding:0px; border-width:0px;background:url(/image/CardBtn.gif) no-repeat scroll 0 0;width:80px; height:24px; cursor:pointer;}
+.Card .BodyBox .body .Box ul li.button .btn{background-position:-97px 0px; margin-left:15px;}
+.worddiv{
+word-break:keep-all;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+a.button5 {font-weight:bold;background: transparent url('/image/button_right_051.png') no-repeat scroll top right; 
+display: block;float: left;height: 45px;margin-right: 6px;
+padding-right: 20px;text-decoration: none;color: #000000;
+font-family: Arial, Helvetica, sans-serif;font-size:12px;}
+a.button5 span{line-height: 45px;padding: 0px 0 5px 18px;
+background: transparent url('/image/button_left_051.png') no-repeat;display: block;}

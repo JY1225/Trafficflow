@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<!-- 使用外部文件配置数据源的属性 -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<!-- 外部文件地址 -->
+				<value>classpath:database_conn.properties</value>
+			</list>
+		</property>
+		<property name="fileEncoding" value="UTF-8" />
+	</bean>
+	<import resource="applicationContext-dao.xml" />
+	<import resource="applicationContext-qos-dao.xml" />
+	<import resource="applicationContext-admin-dao.xml" />
+
+	<!-- 数据源 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://localhost:3306/swim?useUnicode=true&amp;characterEncoding=utf-8</value>
+		</property>
+		<property name="username">
+			<value>root</value>
+		</property>
+		<property name="password">
+			<value>1234</value>
+		</property>
+	</bean>
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<!-- 引用数据源 -->
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="namingStrategy">
+			<bean class="org.hibernate.cfg.ImprovedNamingStrategy" />
+		</property>
+		<!-- hibernate的属性具体见hibernate文档 -->
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect"> ${hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql"> ${hibernate.show_sql}</prop>
+				<prop key="hibernate.format_sql"> ${hibernate.format_sql}</prop>
+				<!-- 非0值 指定jdbc抓取数量的大小调用Statement.setFetchSize() -->
+				<prop key="hibernate.jdbc.fetch_size"> ${hibernate.jdbc.fetch_size}</prop>
+				<!-- jdbc批量更新 建议5到30 -->
+				<prop key="hibernate.jdbc.batch_size"> ${hibernate.jdbc.batch_size}</prop>
+				<!--
+					 说明一下：如果不设置查询缓存，那么hibernate只会缓存使用load()方法获得的单个持久化对象 如果想缓存使用findall()、list()、Iterator()、createCriteria()、createQuery() 等方法获得的数据结果集的话就需要设置hibernate.cache.use_query_cache true 才行
+				-->
+				<prop key="hibernate.cache.use_query_cache"> ${hibernate.cache.use_query_cache}</prop>
+				<!--
+					<prop key="hibernate.cache.provider_class"> ${hibernate.cache.provider_class} </prop> <prop key="hibernate.cache.provider_configuration_file_resource_path"> ${hibernate.ehcache_config_file}
+					</prop> <prop key="hibernate.current_session_context_class"> thread </prop>
+				-->
+			</props>
+		</property>
+		<property name="packagesToScan">
+			<list>
+				<value>com.sweii.vo</value>
+				<value>com.sweii.equip.vo</value>
+				<value>com.erican.auth.vo</value>
+			</list>
+		</property>
+		<property name="mappingDirectoryLocations">
+			<list>
+			</list>
+		</property>
+	</bean>
+
+
+	<!--注解式事务配置驱动-->
+	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
+	<!--
+		业务类bean的实现类标注了@Transactional注解，所以会被 tx:annotation-driven注解驱动自动织入事务增强
+	-->
+
+	<!-- 配置事务管理器 -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<!-- 使Spring关注Annotation -->
+	<context:annotation-config />
+	<context:component-scan base-package="com.sweii.service.impl" />
+	<context:component-scan base-package="com.sweii.equip.service.impl" />
+	<context:component-scan base-package="com.erican.auth.service.impl" />
+	<aop:aspectj-autoproxy />
+
+	<!-- 定义JdbcTemplate Bean(线程安全,执行底层sql语句) -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<!-- 设置数据源 -->
+		<property name="dataSource" ref="dataSource" />
+		<!-- 设置jdbcTemplate创建的statement查询数据时最大的超时时间,默认0 -->
+		<property name="queryTimeout" value="0" />
+		<!-- 设置底层ResultSet每次从数据库返回的行数,默认0,Oracle默认100 -->
+		<property name="fetchSize" value="0" />
+		<!-- 设置底层ResultSet从数据库返回的最大行数,默认0 -->
+		<property name="maxRows" value="0" />
+		<!-- 是否忽略sql警告信息,默认true,false JdbcTemplate将会抛出SQLWarningException -->
+		<property name="ignoreWarnings" value="true" />
+		<property name="nativeJdbcExtractor" ref="nativeJdbcExtractor" />
+	</bean>
+	<!-- 定义DBCP数据源的JDBC本地对象抽取器 -->
+	<bean id="nativeJdbcExtractor" lazy-init="true" class="org.springframework.jdbc.support.nativejdbc.CommonsDbcpNativeJdbcExtractor" />
+	<!-- 定义封装了jdbc操作数据的dao -->
+	<bean id="simpleJdbcDao" class="com.sweii.dao.SimpleJdbcDao">
+		<property name="jdbcTemplate" ref="jdbcTemplate" />
+	</bean>
+	<!--使用泛型DAO作为抽象基类 abstract="true"-->
+	<bean id="baseDao" class="com.sweii.dao.BaseDao" abstract="true">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="simpleJdbcDao">
+			<ref bean="simpleJdbcDao" />
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd" >
+<struts>
+	<package name="common" extends="struts-default" namespace="/common">
+	    <action name="list*" class="com.sweii.action.CommonAction" method="listEntity">
+		   <result name="success" type="dispatcher">/${path}/${entity}.jsp</result>
+		   <result name="jsp" type="dispatcher">/${path}/${jsp}</result>
+		</action>
+		<action name="query*" class="com.sweii.action.CommonAction" method="queryEntityPage">
+			<result name="success" type="dispatcher">/${path}/${entity}.jsp</result>
+			<result name="jsp" type="dispatcher">/${path}/${jsp}</result>
+		</action> 
+		<action name="select*Page" class="com.sweii.action.CommonAction" method="selectEntityPage">
+			<result name="success" type="dispatcher">/${path}/${entity}Select.jsp</result>
+			<result name="jsp" type="dispatcher">/${path}/${jsp}</result>
+		</action>
+		<action name="view*" class="com.sweii.action.CommonAction" method="viewEntity">
+			<result name="success" type="dispatcher">${url}</result>
+			<result name="jsp" type="dispatcher">/${path}/${jsp}</result>
+		</action>
+		<action name="add*" class="com.sweii.action.CommonAction" method="addEntity" />
+		<action name="moreAdd*" class="com.sweii.action.CommonAction" method="moreAddEntity" />
+		<action name="moreEdit*" class="com.sweii.action.CommonAction" method="moreEditEntity" />
+		<action name="edit*" class="com.sweii.action.CommonAction" method="editEntity" />
+		<action name="delete*" class="com.sweii.action.CommonAction" method="deleteEntity" />
+		<action name="prepareEditEntity" class="com.sweii.action.CommonAction" method="prepareEditEntity" />
+		<action name="fieldEditEntity" class="com.sweii.action.CommonAction" method="fieldEditEntity" />
+		<action name="confirm*" class="com.sweii.action.CommonAction" method="confirmEntity" />
+		<action name="change*" class="com.sweii.action.CommonAction" method="changeEntity" />
+		<action name="backup" class="com.sweii.action.CommonAction" method="backup" />
+	</package>
+</struts>

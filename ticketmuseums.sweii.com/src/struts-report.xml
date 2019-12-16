@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd" >
+<struts>
+	<package name="report" extends="struts-default" namespace="/report">
+		<!--年月日售票報表  -->
+		<action name="reportTimeSaleTicket" class="com.sweii.action.ReportAction"
+			method="reportTimeSaleTicket">
+			<result name="success">/report/ReportTimeSaleTicket.jsp</result>
+			<result name="error">/report/ExportSaleTicket.jsp</result>
+		</action>
+		<!--入库统计报表  -->
+		<action name="reportInTicketInfo" class="com.sweii.action.ReportAction"
+			method="reportInTicketInfo">
+			<result name="success">/report/ReportInTicketInfo.jsp</result>
+		</action>
+		<!--售票員交班報表  -->
+		<action name="reportAdminTicket" class="com.sweii.action.ReportAction"
+			method="reportAdminTicket">
+			<result name="success" type="dispatcher">/report/ReportAdminTicket.jsp
+			</result>
+		</action>
+		<!--售票統計報表  -->
+		<action name="reportSaleTicket" class="com.sweii.action.ReportAction"
+			method="reportSaleTicket">
+			<result name="success" type="dispatcher">/report/ReportSaleTicket.jsp</result>
+			</action>
+			<!--  -->
+			<action name="reportTripMac" class="com.sweii.action.ReportAction" method="reportTripMac">
+			<result name="success" type="dispatcher">/report/ReportTripMac.jsp</result>
+		</action>
+	</package>
+</struts>

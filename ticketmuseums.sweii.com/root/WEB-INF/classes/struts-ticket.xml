@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd" >
+<struts>
+	<package name="ticket" extends="struts-default" namespace="/ticket">
+	   <action name="prepareCommonSaleTicket" class="com.sweii.action.SaleTicketAction" method="prepareCommonSaleTicket">
+			<result name="success" type="dispatcher">/ticket/SaleTicket.jsp</result>
+			<result name="user" type="dispatcher">/ticket/UserTicket.jsp</result>
+		</action>
+		 <action name="prepareSaleUserTicket" class="com.sweii.action.SaleTicketAction" method="prepareSaleUserTicket">
+			<result name="success" type="dispatcher">/ticket/UserTicket.jsp</result>
+		</action>
+		 <action name="prepareMendTicket" class="com.sweii.action.SaleTicketAction" method="prepareMendTicket">
+			<result name="success" type="dispatcher">/ticket/MendTicket.jsp</result>
+		</action>
+		<action name="addSaleTicket" class="com.sweii.action.SaleTicketAction" method="addSaleTicket" />
+		<action name="readCardInfo" class="com.sweii.action.SaleTicketAction" method="readCardInfo" />
+		<action name="searchUser" class="com.sweii.action.SaleTicketAction" method="searchUser" />
+		<action name="repairTicket" class="com.sweii.action.SaleTicketAction" method="repairTicket" />
+		<action name="checkCardNumber" class="com.sweii.action.SaleTicketAction" method="checkCardNumber" />
+		<action name="addTicket" class="com.sweii.action.SaleTicketAction" method="addTicket" />
+		<action name="addUserTicket" class="com.sweii.action.SaleTicketAction" method="addUserTicket" />
+		<action name="uploadUserPhoto" class="com.sweii.action.SaleTicketAction" method="uploadUserPhoto" />
+		<action name="returnPrice" class="com.sweii.action.SaleTicketAction" method="returnPrice" />
+		<action name="extendTicket" class="com.sweii.action.SaleTicketAction" method="extendTicket" />
+		<action name="importCard" class="com.sweii.action.SaleTicketAction" method="importCard" />
+	</package>
+</struts>

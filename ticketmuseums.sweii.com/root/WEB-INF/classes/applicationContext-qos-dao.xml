@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="qosDao" parent="baseDao">
+		<constructor-arg>
+			<value>com.sweii.vo.Qos</value>
+		</constructor-arg>
+	</bean>
+	<bean id="scheduleTask" class="com.sweii.util.QosTask" singleton="true"/>
+	<bean id="methodInvokingJobDetail1" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="scheduleTask" />
+		</property>
+		<property name="targetMethod">
+			<value>checkQos</value>
+		</property>
+	</bean>
+
+	<bean id="cronTrigger1" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail">
+			<ref bean="methodInvokingJobDetail1" />
+		</property>
+		<property name="cronExpression">
+			<value>0 * * * * ?</value>
+		</property>
+	</bean>
+
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="cronTrigger1" />
+			</list>
+		</property>
+	</bean>
+</beans>

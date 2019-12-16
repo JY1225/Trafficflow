@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK"?> 
+  <properties>
+    <property key="INIT_PORT" ><![CDATA[1766]]></property>
+    <!-- 初始化缓存地址 -->
+    <property key="INIT_URL" ><![CDATA[http://127.0.0.1:8083/ticket/initCache.do]]></property>
+	<!-- 系统域名 -->
+	<property key="DOMAIN_NAME" ><![CDATA[ticketmuseum.sweii.com]]></property>
+	<!-- Web访问地址 -->
+	<property key="AUTH_HOST" ><![CDATA[http://127.0.0.1:8083]]></property>
+	<!-- 登陆页 -->
+	<property key="LOGIN_URL" ><![CDATA[/Login.jsp]]></property>
+	
+	<property key="IP" ><![CDATA[192.168.222.160]]></property>
+	<property key="USER" ><![CDATA[td]]></property>
+	<property key="PASSWORD" ><![CDATA[td]]></property>
+	<property key="DATABASE" ><![CDATA[syntong]]></property>
+	<!-- 错误页 -->
+	<property key="ERROR_URL" ><![CDATA[/Error.jsp]]></property>
+
+  </properties>
+

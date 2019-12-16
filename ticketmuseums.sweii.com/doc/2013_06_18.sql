@@ -1,0 +1,27 @@
+
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('6','用户管理','用户管理','1','9','/common/queryAdminAdmin.do?subHeight=100&admin.deleteFlag=0','2010-12-20 17:22:04');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('7','模块分类','模块分类','1','9','/admin/queryModuleCategory.do?subHeight=100','2010-12-20 20:44:05');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('8','模块管理','模块管理','1','9','/admin/queryModule.do?subHeight=100','2010-12-20 20:44:47');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('9','菜单管理','菜单管理','1','9','/admin/queryMenuPage.do?subHeight=100','2010-12-20 20:45:19');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('10','角色管理','角色管理','1','9','/common/queryBaseRole.do?subHeight=100','2010-12-20 20:45:49');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('613','售票统计表','售票统计表','0','5','#','2013-04-10 14:53:16');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('614','日售票统计表','日售票统计表','0','5','#','2013-04-10 14:53:49');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('615','月售票统计表','月售票统计表','0','5','#','2013-04-10 14:54:00');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('616','年售票统计表','年售票统计表','0','5','#','2013-04-10 14:54:10');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('617','售票员交班表','售票员交班表','0','5','/report/reportAdminTicket.do','2013-04-10 14:54:20');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('630','数据库备份','数据库备份','0','9','/common/viewSetting.do?id=1&jsp=/setting/DatabaseSetting.jsp','2013-04-28 19:11:57');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('634','散客售票','散客售票','0','1','/ticket/prepareCommonSaleTicket.do','2013-06-13 10:42:46');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('635','会员售票','会员售票','0','1','/ticket/prepareSaleUserTicket.do','2013-06-13 10:42:59');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('636','退还押金','退还押金','0','1','/ticket/ReturnPrice.jsp','2013-06-13 10:43:29');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('637','会员补卡','会员补卡','0','1','/ticket/prepareMendTicket.do','2013-06-13 10:43:53');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('638','会员续费','会员续费','0','1','/ticket/ExtendTicket.jsp','2013-06-13 10:44:07');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('639','会员查询','会员查询','0','1','/ticket/QueryUser.jsp','2013-06-13 10:44:18');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('640','散客票报表','散客票报表','0','5','#','2013-06-13 10:44:41');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('641','会员信息表','会员信息表','0','5','/common/queryExcelUser.do','2013-06-13 10:46:00');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('642','进馆流量表','进馆流量表','0','5','/common/queryExcelRecordLog.do','2013-06-13 10:47:30');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('643','退票报表','退票报表','0','5','/common/queryExcelReturnTicket.do','2013-06-13 10:48:10');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('644','补卡报表','补卡报表','0','5','/common/queryExcelMendTicket.do','2013-06-13 10:48:30');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('645','续费报表','续费报表','0','5','/common/queryExcelExtendTicket.do','2013-06-13 10:48:44');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('646','闸机管理','闸机管理','0','7','/common/queryBaseEquipment.do','2013-06-13 10:49:03');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('647','显示屏设置','显示屏设置','0','7','/common/queryBaseTip.do','2013-06-13 10:49:21');
+insert into `module` (`id`, `name`, `description`, `status`, `category_id`, `entry_url`, `create_time`) values('648','票种定义','票种定义','0','7','/common/queryBaseTicket.do','2013-06-13 10:49:35');

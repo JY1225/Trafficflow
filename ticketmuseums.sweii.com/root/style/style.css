@@ -1,0 +1,544 @@
+
+body{ margin:0px; padding:0px;  font-size:12px; margin:0px;}
+html,body {
+	scrollbar-arrow-color: #6688AA;
+	scrollbar-3dlight-color: #AACCDD;
+	scrollbar-shadow-color: #99BBCC;
+	scrollbar-face-color: #C3D5FD;
+	scrollbar-darkshadow-color: #C3D5FD;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-track-color: #EEEEEE;
+}
+a{text-decoration:none;}
+a:hover{}
+ul, li {list-style-type: none;margin: 0;padding: 0;}
+img{border-width:0px;}
+
+.FHeader{margin:0px; padding:0px; border-width:0px;}
+
+/*登录页*/
+.Login{width:559px; overflow:hidden; margin:auto;}
+.Login .tab{width:559px; height:152px;background:url(/image/login.jpg) no-repeat scroll left top transparent;}
+.Login .body{width:557px; border:1px solid black; height:233px; background:url(/image/loginbg.png) no-repeat scroll 0 0 transparent; border-top-width:0px; position:relative;}
+.Login .body input{border-width:0px; padding:0px;}
+.Login .body .user{ position:absolute; width:165px; height:18px; top:41px; left:290px;}
+.Login .body .pwd{ position:absolute; width:165px; height:18px; top:75px; left:290px;}
+.Login .body .ck{ position:absolute; width:75px; height:18px; top:108px; left:290px;}
+.Login .body .submit{ position:absolute; width:68px; height:30px; top:150px; right:150px; cursor:pointer;background:url(/image/loginbg.gif) no-repeat scroll -338px -150px transparent;}
+.Login .body .btn{position:absolute; width:68px; height:30px; top:150px; right:68px; cursor:pointer;background:url(/image/loginbg.gif) no-repeat scroll -422px -150px transparent;}
+.Login .body .code{float:right; width:57px; height:22px; position:absolute; right:125px;top:106px;}
+.Login .body .tel{ height:20px; line-height:20px; text-align:right; overflow:hidden;}
+.Login .body .tel span{font-weight:bold; color:#686868; font-size:13px; margin-right:10px;}
+.Login .body .com{ position:absolute;height:20px; line-height:20px; padding-bottom:10px; text-align:center; width:557px; bottom:0px; left:0px; color:#686868;}
+.Login .body .com span{}
+
+/* 头部 */
+.Header{width:100%; height:60px; margin:auto;background:url(/image/Header.gif) no-repeat scroll right center transparent; overflow:hidden;}
+.Header .tit{float:left; width:336px; height:60px;background:url(/image/HeaderT.gif) no-repeat scroll left center transparent;}
+.Header .bg{float:right;height:55px; width:60px; margin-right:20px; padding-top:5px;}
+.Header .bg a{ float:left; width:33px; height:33px; margin-left:14px;}
+.Header .bg div{clear:both; text-align:center; color:white; padding:2px 0px;}
+.Header .tui a.t{background:url(/image/tui.gif) no-repeat scroll left center transparent;}
+.Header .qie a.q{background:url(/image/qie.gif) no-repeat scroll left center transparent;}
+.Header .qie1 a.q{background:url(/image/set.png)  no-repeat scroll left center transparent;}
+/*  左 */
+.main{overflow:hidden;height:auto;background:url(/image/leftbg.gif) repeat-y scroll 0 0 transparent;}
+.Right{ margin-left:193px; background-color:#FFFFFF; overflow:hidden; _display:inline-block;}
+.Left{float:left; width:190px;overflow:hidden; position:relative;_display:inline-block; height:100%;background:url(/image/leftbgs.gif) repeat-y scroll 0 0;}
+
+.Left .tab{height:25px; margin-bottom:10px;background:url(/image/leftTab.gif) no-repeat scroll left top transparent;}
+.Left .tab span{font-weight:bold; color:#2957b5; line-height:25px; margin-left:8px;}
+.Left .List{ padding:0px 10px; overflow:hidden;}
+.Left .List ul{padding:5px 0px; overflow:hidden;}
+.Left .List .Tit{width:173px; height:37px; overflow:hidden;background:url(/image/LItem.gif) no-repeat scroll left center transparent;}
+.Left .List .Tit span{width:166px; margin-left:0px; height:37px; overflow:hidden;float:left;}
+.Left .List .Tit a{width:166px; height:30px; padding-top:7px; float:left; color:white; font-size:24px; text-align:center; line-height:30px;}
+
+
+/*.Left .List .Tit a.current{background:url(/image/dot1.gif) no-repeat scroll 147px 16px transparent;}
+.Left .List .Tit a:hover{background:url(/image/dot1.gif) no-repeat scroll 147px 16px transparent;}*/
+.Left .List ul li{ overflow:hidden; height:20px; padding:2px 0px 2px 50px;background:url(/image/listIcon.gif) no-repeat scroll 20px 6px transparent; line-height:25px;}
+.Left .List ul li a{color:white;}
+
+.Left .List .Tit span.p{background:url(/image/Iconp.gif) no-repeat scroll left center;}
+.Left .List .Tit span.k{background:url(/image/Iconk.gif) no-repeat scroll left center;}
+.Left .List .Tit span.s{background:url(/image/Icons.gif) no-repeat scroll  left center;}
+.Left .List .Tit span.j{background:url(/image/Iconj.gif) no-repeat scroll  left center;}
+.Left .List .Tit span.t{background:url(/image/Icont.gif) no-repeat scroll left center}
+.Left .List .Tit span.c{background:url(/image/Iconc.gif) no-repeat scroll left center;}
+/* 右边标题 */
+.box01{ height:25px; overflow:hidden;background:url(/image/box01bg.gif) repeat-x scroll left top transparent;line-height:26px;}
+.box01 .left{float:left; width:10px; height:25px;background:url(/image/box01l.gif) no-repeat scroll left top transparent;}
+.box01 .tit{ font-size:13px; font-weight:bold;color:#2a58b8;}
+/* 业务处理列表--操作 */
+.box02{overflow:hidden; height:44px; background-color:#DFE6F8; border-bottom:2px solid #FFFFFF;}
+.box02 .icon{float:left;overflow:hidden;height:40px; padding-top:4px;}
+.box02 .icon a{float:left;background:url(/image/icon.gif) no-repeat scroll -8px 0 transparent;margin-left:16px;}
+.box02 .icon div{clear:both; margin-top:2px; overflow:hidden; padding:2px 10px;}
+.box02 .icon div a{color:black; word-break:keep-all; background:none; float:left; margin-left:0px;}
+
+.xin{width:16px; height:16px;background:url(/image/Icon_xin.gif) repeat-x scroll 0 0; }
+.box02 .icon a.da{width:16px; height:16px;background:url(/image/Icon_da.gif) no-repeat scroll 0 0;}
+.box02 .icon a.yu{width:16px; height:16px;background:url(/image/Icon_yu.gif) no-repeat scroll 0 0;}
+.box02 .icon a.gou{width:16px; height:16px;background:url(/image/Icon_yu.gif) no-repeat scroll 0 0;}
+.box02 .icon a.sha{width:16px; height:16px;background:url(/image/Icon_sha.gif) no-repeat scroll 0 0;}
+.box02 .icon a.di{width:16px; height:16px;background:url(/image/Icon_dis.gif) no-repeat scroll 0 0;}
+.box02 .icon a.shang{width:16px; height:16px;background:url(/image/Icon_shangs.gif) no-repeat scroll 0 0;}
+.box02 .icon a.xia{width:16px; height:16px;background:url(/image/Icon_xia.gif) no-repeat scroll 0 0;}
+.box02 .icon a.zhui{width:16px; height:16px;background:url(/image/Icon_zhui.gif) no-repeat scroll 0 0;}
+.box02 .icon a.guan{width:16px; height:16px;background:url(/image/Icon_guan.gif) no-repeat scroll 0 0;}
+
+.box02 .Rcur{background:url(/image/IconRcur.gif) no-repeat scroll right top transparent;}
+.box02 .none div a{color:#a0a0a0;}
+/*业务处理列表--表格形式 */
+.box03{background-color:#DFE6F8; overflow:inherit; padding:1px 0px 0px 1px;}
+.box03 .table{overflow:hidden; background-color:white; text-align:left;}
+.box03 .table tr{overflow:hidden; height:16px;font-size:12px;line-height:16px;}
+.box03 .table .tr td{ border-bottom:1px solid black;border-top:1px solid black; border-right:1px solid black;}
+.box03 .table .tr{ background-color:#DFE6F8;}
+.box03 .table .tr .no{width:70px;}
+.box03 .table .tr .name{width:200px;}
+.box03 .table .tr .sex{width:120px;}
+.box03 .table .tr .card{width:120px;}
+.box03 .table .item td{border-bottom:1px solid #d7d1c3; border-right:1px solid #D7D1C3;overflow：hidden;text-overflow:ellipsis; white-space: nowrap;}
+.box03 .table .last td{border-bottom:1px solid #d7d1c3; border-right:1px solid #D7D1C3; background-color:#ffffc1;}
+.box03 .table .color{background-color:#f2f2fe;overflow：hidden}
+.box03 .table .selectcolor{background-color:#FFFFC1;overflow：hidden}
+.box03 .table .current{background-color:black; color:white;}
+
+/*业务处理列表--表格形式 */
+.box03{background-color:#DFE6F8; overflow:inherit; padding:1px 0px 0px 1px;}
+.box03 .table1{overflow:hidden; background-color:white; text-align:left;}
+.box03 .table1 tr{overflow:hidden; height:25px;font-size:12px;line-height:25px;}
+.box03 .table1 .tr td{ border-bottom:1px solid black;border-top:1px solid black; border-right:1px solid black;}
+.box03 .table1 .tr{ background-color:#DFE6F8;}
+.box03 .table1 .tr .no{width:70px;}
+.box03 .table1 .tr .name{width:200px;}
+.box03 .table1 .tr .sex{width:120px;}
+.box03 .table1 .tr .card{width:120px;}
+.box03 .table1 .item td{border-bottom:1px solid #d7d1c3; border-right:1px solid #D7D1C3;overflow：hidden;text-overflow:ellipsis; white-space: nowrap;}
+.box03 .table1 .last td{border-bottom:1px solid #d7d1c3; border-right:1px solid #D7D1C3; background-color:#ffffc1;}
+.box03 .table1 .color{background-color:#f2f2fe;overflow：hidden}
+.box03 .table1 .selectcolor{background-color:#FFFFC1;overflow：hidden}
+.box03 .table1 .current{background-color:black; color:white;}
+/*  办理会员卡  */
+.UIBox{ overflow:hidden;}
+.Card{ overflow:hidden;}
+.Card .tab{height:30px;width:100%;overflow:hidden; position:relative;}
+.Card .tab .tabs{height:31px; margin:auto 5px;background:url(/image/UItabbg.gif) repeat-x scroll left  0; line-height:31px;}
+.Card .tab .le{float:left;background:url(/image/UItable.gif) no-repeat scroll left  0;height:31px;width:30px;}
+.Card .tab .ri{background:url(/image/UItabri.gif) no-repeat scroll right  0; height:31px;width:30px; position:absolute; top:0px;right:0px;}
+.Card .tab .tit{float:left;height:30px; color:white; font-weight:bold;}
+.Card .tab .ri .a{float:left;width:21px; height:21px; margin:6px 0px 0px 4px;}
+
+.Card .BodyBox{background:url(/image/UIborder.gif) repeat-y scroll left  top; padding-left:4px;}
+
+.Card .BodyBox .body{ overflow:hidden; padding-right:4px;background:url(/image/UIborder.gif) repeat-y scroll right top; }
+.Card .foot{ overflow:hidden;background:url(/image/UIfoot.gif) repeat-x scroll left top;width:100%;height:5px;}
+
+.Cbox02{margin:auto; overflow:hidden; padding-left:10px;background:url(/image/icontabbg.gif) no-repeat scroll 0 0  #DFE6F8;}
+.Cbox02 .icon a{ margin-left:6px;}
+.Cbox02 .icon div{padding:2px 4px;}
+
+.box02 .icon a.sa{width:16px; height:16px;background:url(/image/Icon_sa.gif) no-repeat scroll 0 0;}
+.box02 .icon a.fu{width:17px; height:16px;background:url(/image/Icon_fu.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.xia{width:16px; height:16px;background:url(/image/Icon_xias.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.zhui{width:16px; height:16px;background:url(/image/Icon_zhuis.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.tiao{width:16px; height:16px;background:url(/image/Icon_tiao.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.kao{width:16px; height:16px;background:url(/image/Icon_kao.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.zan{width:16px; height:16px;background:url(/image/Icon_zan.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.in{width:16px; height:16px;background:url(/image/Icon_ins.gif) no-repeat scroll 0 0;}
+.Cbox02 .icon a.del{width:16px; height:16px;background:url(/image/Icon_dels.gif) no-repeat scroll 0 0;}
+
+.Card .BodyBox .body .Box{overflow:hidden; margin:auto; background-color:#DFE6F8; color:black; padding-bottom:10px;}
+.Card .BodyBox .body .Box ul{overflow:hidden;}
+.Card .BodyBox .body .Box ul li{overflow:hidden; padding:3px 0px; height:22px; line-height:22px;}
+.Card .BodyBox .body .Box ul li .span{float:left; overflow:hidden; border-top:1px solid #a0a0a0; border-left:1px solid #a0a0a0; border-bottom:1px solid #FFFFFF; border-right:1px solid #FFFFFF;}
+.Card .BodyBox .body .Box ul li .input{float:left; padding:0px; height:18px; border-top:1px solid #686868; border-left:1px solid #686868; border-bottom:1px solid #e3e3e3; border-right:1px solid #e3e3e3;}
+.Card .BodyBox .body .Box ul li .l{float:left;width:73px; text-align:right;}
+.Card .BodyBox .body .Box ul li .l1{float:left; width:133px; padding-left:12px;}
+.Card .BodyBox .body .Box ul li .l1 .in{width:125px; }
+.Card .BodyBox .body .Box ul li .r{float:left;width:173px;padding-left:12px;}
+.Card .BodyBox .body .Box ul li .r .Cin{width:167px;}
+.Card .BodyBox .body .Box ul li .d{float:left; overflow:hidden;width:405px; padding-left:12px;}
+.Card .BodyBox .body .Box ul li .din{width:377px;}
+.Card .BodyBox .body .Box ul li .d span{margin-right:5px;}
+.Card .BodyBox .body .Box ul li .dt{font-weight:bold;}
+.Card .BodyBox .body .Box ul li .tin{width:97px;}
+.Card .BodyBox .body .Box ul li .atd{width:108px; padding-left:12px; position:relative; float:left; margin-right:25px;}
+.Card .BodyBox .body .Box ul li .atd .time{ float:right; position:absolute; width:16px; height:15px; top:4px; right:10px;background:url(/image/listIcon.gif) no-repeat scroll 0 0;}
+.Card .BodyBox .body .Box ul li.button{ text-align:center; padding-top:5px;}
+.Card .BodyBox .body .Box ul li.button input{ padding:0px; border-width:0px;background:url(/image/CardBtn.gif) no-repeat scroll 0 0;width:80px; height:24px; cursor:pointer;}
+.Card .BodyBox .body .Box ul li.button .btn{background-position:-97px 0px; margin-left:15px;}
+.worddiv{
+word-break:keep-all;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+span.button5 {font-weight:bold;background: transparent url('/image/button_right_051.png') no-repeat scroll top right; 
+display: block;float: left;height: 45px;margin-right: 6px;
+padding-right: 20px;text-decoration: none;color: #000000;
+font-family: Arial, Helvetica, sans-serif;font-size:12px;}
+span.button5 span{line-height: 45px;padding: 0px 0 5px 18px;
+background: transparent url('/image/button_left_051.png') no-repeat;display: block;}
+
+.UIBox1{ overflow:hidden;}
+.Card1{ overflow:hidden;}
+.Card1 .tab{height:30px;width:100%;overflow:hidden; position:relative;}
+.Card1 .tab .tabs{height:31px; margin:auto 28px;background:url(/image/UItabbg.gif) repeat-x scroll left  0; line-height:31px;}
+.Card1 .tab .le{float:left;background:url(/image/UItable.gif) no-repeat scroll left  0;height:31px;width:30px;}
+.Card1 .tab .ri{background:url(/image/UItabri.gif) no-repeat scroll right  0; height:31px;width:30px; position:absolute; top:0px;right:0px;}
+.Card1 .tab .tit{float:left;height:30px; color:white; font-weight:bold;}
+.Card1 .tab .ri .a{float:left;width:21px; height:21px; margin:6px 0px 0px 4px;}
+
+.Card1 .BodyBox1{}
+
+.Card1 .BodyBox1 .body1{ overflow:hidden;}
+.Card1 .foot{ overflow:hidden;background:url(/image/UIfoot.gif) repeat-x scroll left top;width:100%;height:5px;}
+.Card1 .BodyBox1 .body1 .Box1{overflow:hidden; margin:auto; background-color:#DFE6F8; color:black; padding-bottom:10px;}
+.Card1 .BodyBox1 .body1 .Box1 ul{overflow:hidden;}
+.Card1 .BodyBox1 .body1 .Box1 ul li{overflow:hidden; padding:3px 0px; height:22px; line-height:22px;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .span{float:left; overflow:hidden; border-top:1px solid #a0a0a0; border-left:1px solid #a0a0a0; border-bottom:1px solid #FFFFFF; border-right:1px solid #FFFFFF;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .input{float:left; padding:0px; height:18px; border-top:1px solid #686868; border-left:1px solid #686868; border-bottom:1px solid #e3e3e3; border-right:1px solid #e3e3e3;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .l{float:left;width:73px; text-align:right;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .l1{float:left; width:133px; padding-left:12px;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .l1 .in{width:125px; }
+.Card1 .BodyBox1 .body1 .Box1 ul li .r{float:left;width:173px;padding-left:12px;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .r .Cin{width:167px;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .d{float:left; overflow:hidden;width:405px; padding-left:12px;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .din{width:377px;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .date{width:87px;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .d span{margin-right:5px;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .dt{font-weight:bold;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .tin{width:97px;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .atd{width:108px; padding-left:12px; position:relative; float:left; margin-right:25px;}
+.Card1 .BodyBox1 .body1 .Box1 ul li .atd .time{ float:right; position:absolute; width:16px; height:15px; top:4px; right:10px;background:url(/image/listIcon.gif) no-repeat scroll 0 0;}
+.Card1 .BodyBox1 .body1 .Box1 ul li.button{ text-align:center; padding-top:5px;}
+.Card1 .BodyBox1 .body1 .Box1 ul li.button input{ padding:0px; border-width:0px;background:url(/image/CardBtn.gif) no-repeat scroll 0 0;width:80px; height:24px; cursor:pointer;}
+.Card1 .BodyBox1 .body1 .Box1 ul li.button .btn{background-position:-97px 0px; margin-left:15px;}
+
+input[readonly],input:readonly{background-color: #F2F2FE;}
+input.readonly{background-color: #F2F2FE;}
+
+/*  日历页面    */
+.calendar{ }
+.calendar table{ width:100%; background:#aac2e9; border-spacing:1px; }
+.calendar table thead tr th{ text-align:center; height:34px; background:#FFFFFF url(/images/box_tit.gif) repeat-x; padding:0px; }
+.calendar table thead tr th.month{ padding:5px 0px; }
+.calendar table thead tr th.month .txt{ width:61px; padding:2px 24px 2px 4px; background:url(/images/ico-calendar.gif) no-repeat 65px center; border:1px solid #DEDEDE; height:22px; font-family:Verdana; }
+.calendar table tbody tr td{ background:#FFFFFF; text-align:center; height:45px; font-size:16px; font-family:Verdana; }
+.calendar table tbody tr td.m{ background:#DFE6F8; }
+.calendar table tbody tr td.w{ background:#a2c5ff; }
+.calendar table tbody tr td.d{ background:#FFFBF0; }
+.calendar .tip{ height:25px; padding:20px 10px; }
+.calendar .tip .item{ width:30%; float:left; }
+.calendar .tip .item span{ width:25px; height:16px; display:inline-block; border:1px solid #CCC; vertical-align:middle; }
+.calendar .tip .item span.d{ background:#FFFBF0; }
+.calendar .tip .item span.w{ background:#a2c5ff; }
+.calendar .tip .item span.m{ background:#DFE6F8; }
+.calendar .info{ margin:0px; }
+.calendar .info{ font-size:14px; line-height:22px; }
+.calendar .info dt{ font-weight:bold; }
+.calendar .info dd{ margin-left:16px; } 
+
+
+.buttons a,.buttons button {
+	display: block;
+	float: left;
+	margin: 0 7px 0 0;
+	font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans- serif;
+	font-size: 100%;
+	line-height: 130%;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 5px 10px 6px 7px; /* Links */
+}
+
+.buttons button {
+	width: auto;
+	overflow: visible;
+	padding: 4px 10px 3px 7px; /* IE6 */
+}
+
+.buttons 
+
+button[type] {
+	padding: 5px 10px 5px 7px; /* Firefox */
+	line-height: 17px; /* Safari */
+}
+
+*:first-child+html button[type] {
+	padding: 4px 10px 3px 7px; /* IE7 */
+}
+
+.buttons button img,.buttons a img {
+	margin: 0 3px -3px 0 !important;
+	padding: 0;
+	border: none;
+	width: 16px;
+	height: 16px;
+}
+
+
+
+
+div.tableContainer {  
+clear: both;  
+overflow: auto;  
+width: 100%;  
+}  
+
+html>body div.tableContainer {  
+height: auto;  
+padding: 0;  
+}  
+head:first-child+body div[class].tableContainer {  
+overflow: hidden; 
+}   
+div.tableContainer table {  
+float: left;  
+width: 100%  
+}   
+html>body div.tableContainer table {  
+float: none;  
+margin: 0;  
+}   
+thead.fixedHeader tr {  
+position: relative;  
+top: expression(document.getElementById("tableContainer").scrollTop)  ;
+background:url(/image/tools.gif) ;
+height:30px;
+
+}  
+thead.fixedHeader2 tr {  
+position: relative;  
+bottom: expression(document.getElementById("tableContainer").scrollHeight > document.getElementById("tableContainer").clientHeight ? document.getElementById("tableContainer").scrollHeight - document.getElementById("tableContainer").scrollTop - document.getElementById("tableContainer").clientHeight :0)  
+}  
+head:first-child+body thead[class].fixedHeader tr {  
+display: block  
+}  
+head:first-child+body tbody[class].scrollContent {  
+display: block;  
+overflow: auto;  
+width: 100%  
+}  
+
+
+
+.tableContainer .table{overflow:hidden; background-color:white; text-align:left;}
+.tableContainer .table tr{overflow:hidden; height:16px;font-size:12px;line-height:16px;}
+.tableContainer .table .tr td{ border-bottom:1px solid black;border-top:1px solid black; border-right:1px solid black;}
+.tableContainer .table .tr{ background-color:#DFE6F8;}
+.tableContainer .table .tr .no{width:70px;}
+.tableContainer .table .tr .name{width:200px;}
+.tableContainer .table .tr .sex{width:120px;}
+.tableContainer .table .tr .card{width:120px;}
+.tableContainer .table .item td{border-bottom:1px solid #d7d1c3; border-right:1px solid #D7D1C3;overflow：hidden;text-overflow:ellipsis; white-space: nowrap;}
+.tableContainer .table .last td{border-bottom:1px solid #d7d1c3; border-right:1px solid #D7D1C3; background-color:#ffffc1;}
+.tableContainer .table .color{background-color:#f2f2fe;overflow：hidden}
+.tableContainer .table .selectcolor{background-color:#FFFFC1;overflow：hidden}
+.tableContainer .table .current{background-color:black; color:white;}
+
+
+.da-button {
+	display: inline-block;
+	border: 0;
+	outline: 0;
+	font: 12px/ 17px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	padding: 4px 12px;
+	margin: 0;
+	width: auto;
+	text-decoration: none;
+	zoom: 1;
+	overflow: hidden; *
+	overflow: visible;
+	color: #fff;
+	border: 1px solid;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.35);
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-appearance: none;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 1px 1px
+		rgba(255, 255, 255, 0.35);
+	-o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 1px 1px
+		rgba(255, 255, 255, 0.35);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 1px 1px
+		rgba(255, 255, 255, 0.35);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 1px 1px
+		rgba(255, 255, 255, 0.35);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.da-button.left {
+	float: left
+}
+
+.da-button.small {
+	padding: 2px 8px
+}
+
+.da-button.large {
+	padding: 10px 25px
+}
+
+.da-button:active {
+	background-image: none !important;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0
+		rgba(255, 255, 255, 1);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0
+		rgba(255, 255, 255, 1);
+	-o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0
+		rgba(255, 255, 255, 1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0
+		rgba(255, 255, 255, 1)
+}
+
+.da-button:disabled {
+	background-image: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color: #F0F0F0;
+	background-color: #F0F0F0;
+	border-color: #ddd;
+	cursor: default
+}
+
+.da-button img {
+	margin: 0 2px;
+	max-width: 20px;
+	max-height: 20px
+}
+
+
+
+.da-button.blue {
+	background-color: #61a4e4;
+	background-image: linear-gradient(bottom, #61a4e4 0, #78b4ec 100%);
+	background-image: -o-linear-gradient(bottom, #61a4e4 0, #78b4ec 100%);
+	background-image: -moz-linear-gradient(bottom, #61a4e4 0, #78b4ec 100%);
+	background-image: -webkit-linear-gradient(bottom, #61a4e4 0, #78b4ec 100%)
+		;
+	background-image: -ms-linear-gradient(bottom, #61a4e4 0, #78b4ec 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #61a4e4),
+		color-stop(1, #78b4ec) );
+	border-color: #21629c
+}
+
+.da-button,.da-button.green {
+	background-color: #a7d037;
+	background-image: linear-gradient(bottom, #a7d037 0, #c8e342 100%);
+	background-image: -o-linear-gradient(bottom, #a7d037 0, #c8e342 100%);
+	background-image: -moz-linear-gradient(bottom, #a7d037 0, #c8e342 100%);
+	background-image: -webkit-linear-gradient(bottom, #a7d037 0, #c8e342 100%)
+		;
+	background-image: -ms-linear-gradient(bottom, #a7d037 0, #c8e342 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a7d037),
+		color-stop(1, #c8e342) );
+	border-color: #779625
+}
+
+.da-button.red {
+	background-color: #e15656;
+	background-image: linear-gradient(bottom, #e15656 0, #f77272 100%);
+	background-image: -o-linear-gradient(bottom, #e15656 0, #f77272 100%);
+	background-image: -moz-linear-gradient(bottom, #e15656 0, #f77272 100%);
+	background-image: -webkit-linear-gradient(bottom, #e15656 0, #f77272 100%)
+		;
+	background-image: -ms-linear-gradient(bottom, #e15656 0, #f77272 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e15656),
+		color-stop(1, #f77272) );
+	border-color: #bb2929
+}
+
+.da-button.pink {
+	background-color: #ea799b;
+	background-image: linear-gradient(bottom, #ea799b 0, #eea3bc 100%);
+	background-image: -o-linear-gradient(bottom, #ea799b 0, #eea3bc 100%);
+	background-image: -moz-linear-gradient(bottom, #ea799b 0, #eea3bc 100%);
+	background-image: -webkit-linear-gradient(bottom, #ea799b 0, #eea3bc 100%)
+		;
+	background-image: -ms-linear-gradient(bottom, #ea799b 0, #eea3bc 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ea799b),
+		color-stop(1, #eea3bc) );
+	border-color: #b04264
+}
+
+.da-button.gray {
+	background-color: #e3e3e3;
+	background-image: linear-gradient(bottom, #e3e3e3 0, #f9f9f9 100%);
+	background-image: -o-linear-gradient(bottom, #e3e3e3 0, #f9f9f9 100%);
+	background-image: -moz-linear-gradient(bottom, #e3e3e3 0, #f9f9f9 100%);
+	background-image: -webkit-linear-gradient(bottom, #e3e3e3 0, #f9f9f9 100%)
+		;
+	background-image: -ms-linear-gradient(bottom, #e3e3e3 0, #f9f9f9 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e3e3e3),
+		color-stop(1, #f9f9f9) );
+	color: #666;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+	border-color: #9e9e9e;	
+}
+
+.da-button.orange {
+	background-color: #fab341;
+	background-image: linear-gradient(bottom, #fab341 0, #ffcb72 100%);
+	background-image: -o-linear-gradient(bottom, #fab341 0, #ffcb72 100%);
+	background-image: -moz-linear-gradient(bottom, #fab341 0, #ffcb72 100%);
+	background-image: -webkit-linear-gradient(bottom, #fab341 0, #ffcb72 100%)
+		;
+	background-image: -ms-linear-gradient(bottom, #fab341 0, #ffcb72 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fab341),
+		color-stop(1, #ffcb72) );
+	border-color: #cc731e
+}
+.da-input {
+	display: inline-block;
+	border: 0;
+	outline: 0;
+	font: 12px/ 17px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	margin: 0;
+	width: auto;
+	cursor: pointer;
+	text-decoration: none;
+	zoom: 1;
+	overflow: hidden; *
+	overflow: visible;
+	color: #fff;
+	border: 1px solid;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.35);
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-appearance: none;
+	background-color: #F2F2FE;
+	background-image: linear-gradient(bottom, #61a4e4 0, #78b4ec 100%);
+	background-image: -o-linear-gradient(bottom, #61a4e4 0, #78b4ec 100%);
+	background-image: -moz-linear-gradient(bottom, #61a4e4 0, #78b4ec 100%);
+	background-image: -webkit-linear-gradient(bottom, #61a4e4 0, #78b4ec 100%);
+	background-image: -ms-linear-gradient(bottom, #61a4e4 0, #78b4ec 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #61a4e4),
+		color-stop(1, #78b4ec) );
+	border-color: #21629c
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 1px 1px
+		rgba(255, 255, 255, 0.35);
+	-o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 1px 1px
+		rgba(255, 255, 255, 0.35);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 1px 1px
+		rgba(255, 255, 255, 0.35);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 1px 1px
+		rgba(255, 255, 255, 0.35);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.tools{ height:30px;background:url(/image/tools.gif) ;}
+.tools{ height:30px;background:url(/image/tools40.gif) ;}
+.dialogClass{ padding-top:2px;height:30px;background:url(/image/tools.gif) ;}
+.trborder {
+	border-bottom:1px solid black;; border-right:1px solid black;;
+}
